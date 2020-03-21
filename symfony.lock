@@ -1,4 +1,7 @@
 {
+    "automated-medical-assistant/microservice-message-info": {
+        "version": "0.1"
+    },
     "nette/php-generator": {
         "version": "v3.3.4"
     },

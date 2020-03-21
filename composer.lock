@@ -4,8 +4,38 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3dd243b99b352f09233a3a1b61b71023",
+    "content-hash": "cd67ad5588de917722cc59229803fa22",
     "packages": [
+        {
+            "name": "automated-medical-assistant/microservice-message-info",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Automated-Medical-Assistant/microservice-message-info.git",
+                "reference": "3e624d9b5467fbf7594f06a1addec201f39c9e0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Automated-Medical-Assistant/microservice-message-info/zipball/3e624d9b5467fbf7594f06a1addec201f39c9e0a",
+                "reference": "3e624d9b5467fbf7594f06a1addec201f39c9e0a",
+                "shasum": ""
+            },
+            "require": {
+                "xervice/data-provider": "^2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "App\\": "src/",
+                    "MessageInfo\\": "message_info/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2020-03-21T12:37:40+00:00"
+        },
         {
             "name": "nette/php-generator",
             "version": "v3.3.4",

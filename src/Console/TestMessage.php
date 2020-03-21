@@ -2,7 +2,7 @@
 
 namespace App\Console;
 
-use App\DataTransferObject\TestDataProvider;
+use MessageInfo\NumberCreationRequestAPIDataProvider;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -21,7 +21,7 @@ class TestMessage extends Command
     /**
      * @param \Symfony\Component\Messenger\MessageBusInterface $messageBus
      */
-    public function __construct(\Symfony\Component\Messenger\MessageBusInterface $messageBus)
+    public function __construct(MessageBusInterface $messageBus)
     {
         $this->messageBus = $messageBus;
         parent::__construct();
@@ -34,9 +34,10 @@ class TestMessage extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $testDataProvider = new TestDataProvider();
-        $testDataProvider->setTestInt(time());
-        $testDataProvider->setTestString((new \DateTime())->format('Y-m-d H:i:s'));
+        $testDataProvider = new NumberCreationRequestAPIDataProvider();
+        $testDataProvider->setNumber(time() . rand(1,100));
+        $testDataProvider->setDoctorId(1);
+        $testDataProvider->setCreationDate((new \DateTime())->format('Y-m-d H:i:s'));
 
         $this->messageBus->dispatch($testDataProvider);
 

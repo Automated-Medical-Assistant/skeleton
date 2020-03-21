@@ -4,4 +4,4 @@ framework:
             test_event.test_event: "%env(TEST_EVENT_TEST_EVENT)%"
 
         routing:
-            'App\DataTransferObject\TestDataProvider' : test_event.test_event
+            'MessageInfo\NumberCreationRequestAPIDataProvider' : test_event.test_event
