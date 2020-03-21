@@ -22,6 +22,7 @@ sudo apt-get -y install gcc make autoconf libc-dev pkg-config
 sudo apt-get -y install libssl-dev
 sudo apt-get -y install librabbitmq-dev
 sudo apt-get -y install php-pear php-dev
+sudo apt-get -y install php-redis php-igbinary
 
 sudo pecl install amqp [autodetect]
 
