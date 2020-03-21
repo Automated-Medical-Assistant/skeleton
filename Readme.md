@@ -8,6 +8,11 @@
 * Install Composer, which is used to install PHP packages;
 
 
+##### RabbitMQ
+
+Login: admin  
+Pass: admin
+
 ###### Setup
 ```
 docker-compose pull
