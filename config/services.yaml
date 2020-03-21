@@ -23,3 +23,6 @@ services:
     Xervice\DataProvider\Communication\Console\GenerateCommand:
         tags: [console.command]
     ###< Xervice\DataProvider ###
+
+    App\MessageHandler\MyMessageHandler:
+        tags: [messenger.message_handler]
