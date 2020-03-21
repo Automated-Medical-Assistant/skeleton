@@ -14,3 +14,10 @@ services:
         ports:
             - 15672:15672
             - 5672:5672
+    db:
+        image: mysql:5.7
+        container_name: db
+        env_file:
+            - ./.enviroment/db.env
+        ports:
+            - 3336:3306
