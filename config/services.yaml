@@ -30,3 +30,8 @@ services:
     App\Redis\RedisBusinessFactory:
         arguments:
             $uri: '%env(REDIS)%'
+
+    App\Controller\:
+        resource: '../src/Controller'
+        tags: ['controller.service_arguments']
+
