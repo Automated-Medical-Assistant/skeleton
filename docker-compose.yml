@@ -6,13 +6,6 @@ services:
         command: redis-server --appendonly yes
         ports:
             - 6379:6379
-    redisui:
-        image: tenstartups/redis-commander
-        command: --redis-host redis
-        links:
-            - redis:redis
-        ports:
-            - "8081:8081"
     rabbitmq:
         image: rabbitmq:3.7.6-management
         environment:
