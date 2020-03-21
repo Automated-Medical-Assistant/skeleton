@@ -26,3 +26,7 @@ services:
 
     App\MessageHandler\MyMessageHandler:
         tags: [messenger.message_handler]
+
+    App\Redis\RedisBusinessFactory:
+        arguments:
+            $uri: '%env(REDIS)%'
