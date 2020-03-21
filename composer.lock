@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd67ad5588de917722cc59229803fa22",
+    "content-hash": "fc086e8b23203e71670a8c6275421b53",
     "packages": [
         {
             "name": "automated-medical-assistant/microservice-message-info",
-            "version": "0.1",
+            "version": "0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automated-Medical-Assistant/microservice-message-info.git",
-                "reference": "3e624d9b5467fbf7594f06a1addec201f39c9e0a"
+                "reference": "d0ab8bd6d05601b869251662009ace985bec3e72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automated-Medical-Assistant/microservice-message-info/zipball/3e624d9b5467fbf7594f06a1addec201f39c9e0a",
-                "reference": "3e624d9b5467fbf7594f06a1addec201f39c9e0a",
+                "url": "https://api.github.com/repos/Automated-Medical-Assistant/microservice-message-info/zipball/d0ab8bd6d05601b869251662009ace985bec3e72",
+                "reference": "d0ab8bd6d05601b869251662009ace985bec3e72",
                 "shasum": ""
             },
             "require": {
@@ -34,7 +34,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2020-03-21T12:37:40+00:00"
+            "time": "2020-03-21T13:16:32+00:00"
         },
         {
             "name": "nette/php-generator",
